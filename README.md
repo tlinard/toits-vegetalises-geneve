@@ -60,5 +60,7 @@ Nous avons utilisé trois bases de données du catalogue des SITG :
 3. Lancez un serveur local avec Python : `python3 -m http.server`
 4. Ouvrez votre navigateur web et allez à l'adresse : `http://0.0.0.0:8000/`
 
+Il peut aussi être visualisé [ici](https://tanguy-linard.github.io/toits-vegetalises-geneve)
+
 ## Auteurs 
 Ce projet a été réalisé par Tanguy Linard et Joseph Grob. 
