@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Toits végétalisés à Genève</title>
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v7.js"></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="title">
+        <h1>La distribution des toits végétalisés selon leur type, Canton de Genève</h1>
+        <!-- boutons pour choisir type de region affiché -->
+        <div class="yearButton">
+            Année d'observation :
+            <input id="button2009" type="radio" name="yearButton" value="2009" />
+            <label for="button2009">2009</label>
+
+            <input id="button2012" type="radio" name="yearButton" value="2012" />
+            <label for="button2012">2012</label>
+
+            <input id="button2015" type="radio" name="yearButton" value="2015" />
+            <label for="button2015">2015</label>
+
+            <input id="button2018" type="radio" name="yearButton" value="2018" />
+            <label for="button2018">2018</label>
+
+            <input id="button2019" type="radio" name="yearButton" value="2019" checked />
+            <label for="button2019">2019</label>
+        </div>
+    </div>
+    <div id="map"></div>
+    <div id="barplot"></div>
+    <div id="boxplot"></div>
+    <div id="source">Données : SITG (Sources d'information du Terrioire Genevois), 2023<br>Fond de carte :  SITG (Sources d'information du Terrioire Genevois), 2024</div>
+
+    <!-- script js -->
+    <script src="index.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+</body>
+
+</html>
