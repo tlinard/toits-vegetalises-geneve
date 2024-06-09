@@ -62,5 +62,8 @@ Nous avons utilisé trois bases de données du catalogue des SITG :
 
 Il peut aussi être visualisé [ici](https://tanguy-linard.github.io/toits-vegetalises-geneve)
 
-## Auteurs 
-Ce projet a été réalisé par Tanguy Linard et Joseph Grob. 
+## Contexte de développement
+Ce projet a été développé lors du semestre de printemps 2024 dans le cadre du cours de Visualisation de données dispensé par Isaac Pante (SLI, Lettres, UNIL)
+
+## Auteurs
+Ce projet a été réalisé par Tanguy Linard et Joseph Grob.
