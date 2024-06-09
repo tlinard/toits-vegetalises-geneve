@@ -1,11 +1,13 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 12pt;
+    /* font-size: 12pt; */
+    font-size : 1.2vw;
     margin: 20px;
 }
 
 h1 {
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: 1.6vw;
 }
 
 #title {
@@ -30,15 +32,15 @@ h1 {
     top: 0px;
     left: 60vw;
     width: 40vw;
-    height: 48vh;
+    height: 38vh;
 }
 
 #boxplot {
     position: absolute;
-    top: 48vh;
+    top: 38vh;
     left: 60vw;
     width: 40vw;
-    height: 48vh;
+    height: 58vh;
 }
 
 #source {
@@ -47,7 +49,8 @@ h1 {
     left: 60vw;
     width: 40vw;
     height: 4vh;
-    font-size: 12px;
+    /* font-size: 12px; */
+    font-size: 0.8vw;
     padding-left: 20px;
     box-sizing: border-box;
 }

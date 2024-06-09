@@ -5,7 +5,7 @@ var selectedYear = 2019;
 var statGroups = [];
 
 // marges
-const margin = { top: 50, right: 50, bottom: 50, left: 50 };
+const margin = { top: 50, right: 50, bottom: 30, left: 50 };
 
 // Barplot
 // conteneur du barplot
@@ -247,7 +247,7 @@ function draw_barplot() {
         // interactivité avec la souris
         .on("mouseover", function (event, d) {
             tooltip.attr('x', barx(d[0]) + barx.bandwidth() / 2)
-                .attr('y', bary(d[1]) - 10)
+                .attr('y', bary(d[1]) - 5)
                 .text(d[1]);
 
             highlight_type(d[0]);
@@ -272,7 +272,7 @@ function draw_barplot() {
         .call(d3.axisBottom(barx))
         .selectAll("text")
         .attr("dy", "0.35em")
-        .style("text-anchor", "middle");
+        .attr("font-size", "0.6vw");
 
 
     // Ajout de l'axe des y
@@ -284,7 +284,7 @@ function draw_barplot() {
         .attr("x", barWidth / 2)
         .attr("y", margin.top / 2)
         .attr("text-anchor", "middle")
-        .attr("font-size", "12px")
+        .attr("font-size", "0.9vw")
         .attr("font-weight", "bold")
         .text("Nombre de toits végétalisés selon le type d'usage des bâtiments");
 }
@@ -431,7 +431,7 @@ function draw_boxplot() {
         .call(d3.axisBottom(boxx))
         .selectAll("text")
         .attr("dy", "0.35em")
-        .style("text-anchor", "middle");
+        .attr("font-size", "0.6vw")
 
     // Ajout de l'axe des y
     // bas
@@ -440,7 +440,8 @@ function draw_boxplot() {
 
     // haut
     boxg.append("g")
-        .call(d3.axisLeft(boxyUpper));
+        .call((d3.axisLeft(boxyUpper))
+            .ticks(3));
 
     const tooltip = boxg.append("text")
         .attr("class", "tooltip")
@@ -453,7 +454,7 @@ function draw_boxplot() {
         .attr("x", boxWidth / 2)
         .attr("y", margin.top / 2)
         .attr("text-anchor", "middle")
-        .attr("font-size", "12px")
+        .attr("font-size", "0.9vw")
         .attr("font-weight", "bold")
         .html("Surface occupée (en m&sup2;) par les toits végétalisés selon le type d'usage des bâtiments");
 }
