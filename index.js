@@ -461,7 +461,6 @@ function draw_boxplot() {
 
 // Mets à jour le boxplot
 function update_boxplot() {
-    console.log(statGroups);
 
     // ligne de min à max
     // bas
